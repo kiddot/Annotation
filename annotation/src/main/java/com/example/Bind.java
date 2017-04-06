@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * created by kiddot on 2017/04/05
  */
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 @Target(ElementType.FIELD)
 public @interface Bind {
     int value();
