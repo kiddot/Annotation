@@ -34,7 +34,7 @@ public class ProxyInfo {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("// Generated code. Do not modify!\n");
         stringBuilder.append("package ").append(packageName).append(";\n\n");
-        stringBuilder.append("import com.example.*;\n");
+        stringBuilder.append("import com.android.api.*;\n");
         stringBuilder.append("\n");
 
         stringBuilder.append("public class ").append(proxyClassName).append(" implements " + ProxyInfo.PROXY + "<" + typeElement.getQualifiedName() + ">");

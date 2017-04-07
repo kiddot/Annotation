@@ -1,5 +1,7 @@
 package com.example;
 
+import com.google.auto.service.AutoService;
+
 import java.io.IOException;
 import java.io.Writer;
 import java.util.HashMap;
@@ -12,6 +14,7 @@ import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
+import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
@@ -25,7 +28,7 @@ import javax.tools.JavaFileObject;
 /**
  * Created by kiddo on 17-4-5.
  */
-
+@AutoService(Processor.class)
 public class ViewInjectProcessor extends AbstractProcessor {
     private Filer mFileUtils;
     private Messager messager;
